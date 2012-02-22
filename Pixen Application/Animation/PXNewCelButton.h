@@ -7,12 +7,13 @@
 
 @interface PXNewCelButton : NSView
 {
+  @private
 	NSCellStateValue _state;
 	NSBezierPath *_buttonPath, *_plusPath;
-    id _delegate;
+	id __unsafe_unretained _delegate;
 }
 
-@property (nonatomic, assign) IBOutlet id delegate;
+@property (nonatomic, unsafe_unretained) IBOutlet id delegate;
 
 @end
 
