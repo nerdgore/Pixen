@@ -7,13 +7,14 @@
 
 @interface PXClickableView : NSView
 {
-    BOOL _selected;
-    id _delegate;
+  @private
+	BOOL _selected;
+	id __unsafe_unretained _delegate;
 }
 
 @property (nonatomic, assign) BOOL selected;
 
-@property (nonatomic, assign) IBOutlet id delegate;
+@property (nonatomic, unsafe_unretained) IBOutlet id delegate;
 
 @end
 
