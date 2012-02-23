@@ -8,11 +8,11 @@
 @interface PXAboutController : NSViewController
 {
   @private
-	NSTextView *_creditsView;
-	NSTextField *_versionField;
+	NSTextView *__unsafe_unretained _creditsView;
+	NSTextField *__unsafe_unretained _versionField;
 }
 
-@property (nonatomic, assign) IBOutlet NSTextView *creditsView;
-@property (nonatomic, assign) IBOutlet NSTextField *versionField;
+@property (nonatomic, unsafe_unretained) IBOutlet NSTextView *creditsView;
+@property (nonatomic, unsafe_unretained) IBOutlet NSTextField *versionField;
 
 @end

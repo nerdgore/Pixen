@@ -10,13 +10,6 @@
 
 @implementation OSPlasticButtonCell
 
-- (void)dealloc
-{
-	[_glass release];
-	[_glassHighlighted release];
-	[super dealloc];
-}
-
 - (void)setupImages
 {
 	if (_glass && _glassHighlighted)
@@ -24,12 +17,12 @@
 	
 	[self setShowsStateBy:0];
 	
-	_glass = [[NSImage imageNamed:@"glass"] retain];
+	_glass = [NSImage imageNamed:@"glass"];
 	
 	if ([NSColor currentControlTint] == NSGraphiteControlTint)
-		_glassHighlighted = [[NSImage imageNamed:@"glass-h-graphite"] retain];
+		_glassHighlighted = [NSImage imageNamed:@"glass-h-graphite"];
 	else
-		_glassHighlighted = [[NSImage imageNamed:@"glass-h"] retain];
+		_glassHighlighted = [NSImage imageNamed:@"glass-h"];
 }
 
 - (void)drawWithFrame:(NSRect)frame inView:(NSView *)view

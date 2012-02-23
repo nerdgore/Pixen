@@ -16,14 +16,6 @@
 
 @synthesize windowController = _windowController;
 
-- (void)dealloc
-{
-	[_printableView release];
-	[_windowController release];
-	
-	[super dealloc];
-}
-
 - (void)initWindowController { }
 
 - (void)setWindowControllerData { }
@@ -91,7 +83,7 @@
 				 didPrintSelector:(SEL)didPrintSelector contextInfo:(void *)contextInfo
 {
 	if (!_printableView) {
-		_printableView = [[PXCanvasPrintView viewForCanvas:[self canvas]] retain];
+		_printableView = [PXCanvasPrintView viewForCanvas:[self canvas]];
 	}
 	
 	float scale = [[[[self printInfo] dictionary] objectForKey:NSPrintScalingFactor] floatValue];

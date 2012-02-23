@@ -18,15 +18,6 @@
 	return [NSArray arrayWithObjects:PixenPaletteType, MicrosoftPaletteType, JascPaletteType, AdobePaletteType, nil];
 }
 
-- (void)dealloc
-{
-	[_savePanel release];
-	[_typeSelector release];
-	[_palette release];
-	
-	[super dealloc];
-}
-
 - (void)panelDidEndWithReturnCode:(NSInteger)code
 {
 	if (code == NSFileHandlingPanelCancelButton) {
@@ -91,17 +82,15 @@
 
 - (void)runWithPalette:(PXPalette *)aPalette inWindow:(NSWindow *)window
 {
-	if (_palette) {
-		[_palette release];
+	if (_palette)
 		_palette = nil;
-	}
 	
 	if (aPalette == nil)
 		return;
 	
-	_palette = [aPalette retain];
+	_palette = aPalette;
 	
-	_savePanel = [[NSSavePanel savePanel] retain];
+	_savePanel = [NSSavePanel savePanel];
 	[_savePanel setAllowedFileTypes:[NSArray arrayWithObjects:PXPaletteSuffix, MicrosoftPaletteSuffix, AdobePaletteSuffix, nil]];
 	[_savePanel setPrompt:@"Export"];
 	[_savePanel setExtensionHidden:YES];
@@ -118,7 +107,6 @@
 	
 	[NSApp runModalForWindow:_savePanel];
 	
-	[_palette release];
 	_palette = nil;
 }
 

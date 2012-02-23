@@ -52,7 +52,8 @@
 		float blue = bytes[24 + (i * 4) + 2] / 255.0;
 		[palette addColor:[NSColor colorWithCalibratedRed:red green:green blue:blue alpha:1]];
 	}
-	return [palette autorelease];
+	
+	return palette;
 }
 
 @end

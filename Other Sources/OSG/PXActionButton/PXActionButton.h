@@ -7,9 +7,10 @@
 
 @interface PXActionButton : NSPopUpButton
 {
-    NSImage *_image;
+  @private
+	NSImage *_image;
 }
 
-@property (nonatomic, retain) NSImage *image;
+@property (nonatomic, strong) NSImage *image;
 
 @end
