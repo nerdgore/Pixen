@@ -32,12 +32,12 @@
 	IBOutlet NSTextField *nameField;
 	IBOutlet NSTextField *promptString;
 	id _context;
-	id _delegate;
+	id __unsafe_unretained _delegate;
 	BOOL _runningModal;
 	NSString *_modalString;
 }
 
-@property (nonatomic, assign) id delegate;
+@property (nonatomic, unsafe_unretained) id delegate;
 
 - (id)init;
 

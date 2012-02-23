@@ -147,12 +147,7 @@
 
 - (void)dealloc
 {
-	[_aboutPanel release];
-	[_viewController release];
-	
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
-	
-	[super dealloc];
 }
 
 @end

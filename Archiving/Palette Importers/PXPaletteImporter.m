@@ -72,7 +72,7 @@
 	
 	if (reader) // If we've got a reader, we've got to import the format first.
 	{
-		newPal = [[reader paletteWithData:[NSData dataWithContentsOfFile:path]] retain];
+		newPal = [reader paletteWithData:[NSData dataWithContentsOfFile:path]];
 	}
 	else // It must be a pxpalette.
 	{
@@ -84,7 +84,6 @@
 	newPal.canSave = YES;
 	
 	[NSKeyedArchiver archiveRootObject:[newPal dictForArchiving] toFile:finalPath];
-	[newPal release];
 }
 
 - (void)panelDidEndWithReturnCode:(NSInteger)code modalSheet:(BOOL)modalSheet
@@ -104,15 +103,9 @@
 	if (modalSheet) [NSApp stopModal];
 }
 
-- (void)dealloc
-{
-	[_openPanel release];
-	[super dealloc];
-}
-
 - (void)runInWindow:(NSWindow *)window
 {
-	_openPanel = [[NSOpenPanel openPanel] retain];
+	_openPanel = [NSOpenPanel openPanel];
 	[_openPanel setAllowsMultipleSelection:YES];
 	[_openPanel setCanChooseDirectories:NO];
 	[_openPanel setPrompt:@"Install"];

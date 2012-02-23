@@ -21,7 +21,7 @@ typedef enum {
 
 @property (nonatomic, readonly) PXToolPropertiesSide side;
 
-@property (nonatomic, retain) PXToolPropertiesController *propertiesController;
+@property (nonatomic, strong) PXToolPropertiesController *propertiesController;
 
 + (PXToolPropertiesManager *)leftToolPropertiesManager;
 + (PXToolPropertiesManager *)rightToolPropertiesManager;
