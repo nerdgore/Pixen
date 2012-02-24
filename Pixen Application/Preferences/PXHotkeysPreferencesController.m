@@ -19,17 +19,11 @@
 	return self;
 }
 
-- (void)dealloc
-{
-	self.form = nil;
-	[super dealloc];
-}
-
 - (void)awakeFromNib
 {
 	for (NSCell *currentCell in [self.form cells])
 	{
-		[currentCell setFormatter:[[[PXHotkeyFormatter alloc] init] autorelease]];
+		[currentCell setFormatter:[[PXHotkeyFormatter alloc] init]];
 	}
 }
 

@@ -7,9 +7,10 @@
 
 @interface PXHotkeysPreferencesController : NSViewController
 {
-    NSForm *_form;
+  @private
+	NSForm *__unsafe_unretained _form;
 }
 
-@property (nonatomic, assign) IBOutlet NSForm *form;
+@property (nonatomic, unsafe_unretained) IBOutlet NSForm *form;
 
 @end

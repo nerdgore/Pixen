@@ -12,7 +12,7 @@
 	IBOutlet NSColorWell *backWell;
 }
 
-@property (nonatomic, retain) NSColor *backColor;
+@property (nonatomic, strong) NSColor *backColor;
 
 - (IBAction)configuratorBackColorChanged:(id)sender;
 

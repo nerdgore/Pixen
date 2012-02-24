@@ -39,7 +39,7 @@
 	
 	for (PXLayer *layer in [canvas layers])
 	{
-		NSImage *newLayerImage = [[[NSImage alloc] initWithSize:size] autorelease];
+		NSImage *newLayerImage = [[NSImage alloc] initWithSize:size];
 		int oldOpacity = [layer opacity];
 		[layer setOpacity:100];
 		[newLayerImage lockFocus];
