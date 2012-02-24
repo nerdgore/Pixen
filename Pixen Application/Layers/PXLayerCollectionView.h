@@ -11,9 +11,10 @@
 
 @interface PXLayerCollectionView : PXDeleteCollectionView
 {
-    PXLayerController *_layerController;
+  @private
+	PXLayerController *__unsafe_unretained _layerController;
 }
 
-@property (nonatomic, assign) PXLayerController *layerController;
+@property (nonatomic, unsafe_unretained) PXLayerController *layerController;
 
 @end

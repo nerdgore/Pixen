@@ -47,8 +47,7 @@
 - (void)setPattern:(PXPattern *)pattern
 {
 	if (drawingPattern != pattern) {
-		[drawingPattern release];
-		drawingPattern = [pattern retain];
+		drawingPattern = pattern;
 		
 		[lineThicknessField setEnabled:NO];
 		[clearButton setEnabled:YES];
@@ -79,7 +78,6 @@
 
 - (IBAction)clearPattern:(id)sender
 {
-	[drawingPattern release];
 	drawingPattern = nil;
 	
 	[lineThicknessField setEnabled:YES];
@@ -100,7 +98,6 @@
 		}
 		
 		[self setPattern:pattern];
-		[pattern release];
 	}
 	
 	if (!patternEditor) {
@@ -129,11 +126,7 @@
 
 - (void)dealloc
 {
-	[patternEditor release];
-	[drawingPattern release];
-	[toolName release];
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
-	[super dealloc];
 }
 
 @end

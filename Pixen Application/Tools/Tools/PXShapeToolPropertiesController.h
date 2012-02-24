@@ -39,7 +39,7 @@
 	int borderWidth;
 }
 
-@property (nonatomic, retain) NSColor *fillColor;
+@property (nonatomic, strong) NSColor *fillColor;
 @property (nonatomic, assign) BOOL shouldFill;
 @property (nonatomic, assign) BOOL shouldUseMainColorForFill;
 @property (nonatomic, assign) int borderWidth;

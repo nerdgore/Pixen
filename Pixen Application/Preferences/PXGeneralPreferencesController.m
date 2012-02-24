@@ -19,12 +19,6 @@
 	return self;
 }
 
-- (void)dealloc
-{
-	self.autoBackupFrequency = nil;
-	[super dealloc];
-}
-
 - (void)awakeFromNib
 {
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

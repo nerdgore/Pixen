@@ -46,7 +46,7 @@
 }
 
 @property (nonatomic, assign) int lineThickness;
-@property (nonatomic, retain) PXPattern *pattern;
+@property (nonatomic, strong) PXPattern *pattern;
 
 @property (nonatomic, copy) NSString *toolName;
 

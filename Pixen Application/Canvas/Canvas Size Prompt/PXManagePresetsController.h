@@ -7,12 +7,13 @@
 
 @interface PXManagePresetsController : NSWindowController < NSTableViewDataSource, NSTableViewDelegate >
 {
+  @private
 	NSArray *_presets;
-    NSTableView *_tableView;
+	NSTableView *__unsafe_unretained _tableView;
     BOOL _canDeletePreset;
 }
 
-@property (nonatomic, assign) IBOutlet NSTableView *tableView;
+@property (nonatomic, unsafe_unretained) IBOutlet NSTableView *tableView;
 
 @property (nonatomic, assign) BOOL canDeletePreset;
 

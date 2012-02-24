@@ -48,17 +48,16 @@
 	
 	[docController addDocument:doc];
 	
-	NSImage *cocoaImage = [[[self canvas] exportImage] retain];
+	NSImage *cocoaImage = [[self canvas] exportImage];
 	[cocoaImage lockFocus];
 	
-	NSBitmapImageRep *bitmapRep = [[[NSBitmapImageRep alloc] initWithFocusedViewRect:(NSRect){NSZeroPoint,[cocoaImage size]}] autorelease];
+	NSBitmapImageRep *bitmapRep = [[NSBitmapImageRep alloc] initWithFocusedViewRect:(NSRect){NSZeroPoint,[cocoaImage size]}];
 	[cocoaImage unlockFocus];
 	
 	[cocoaImage removeRepresentation:[[cocoaImage representations] objectAtIndex:0]];
 	[cocoaImage addRepresentation:bitmapRep];
 	
 	[[[[doc animation] celAtIndex:0] canvas] replaceActiveLayerWithImage:cocoaImage];
-	[cocoaImage release];
 	
 	[doc makeWindowControllers];
 	[doc showWindows];
@@ -137,7 +136,7 @@
 		return;
 	}
 	
-	[newDocument setCanvas: [[canvas copy] autorelease]];
+	[newDocument setCanvas:[canvas copy]];
 	
 	[[NSDocumentController sharedDocumentController] addDocument:newDocument];
 	[newDocument makeWindowControllers];
@@ -152,7 +151,6 @@
 	palette.name = NSLocalizedString(@"Document Palette", nil);
 	
 	[exporter runWithPalette:palette inWindow:[self window]];
-	[palette release];
 }
 
 - (IBAction)mergeDown:(id) sender
