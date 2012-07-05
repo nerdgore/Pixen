@@ -41,6 +41,8 @@
 		C93DB18613ABC963006D42FE /* PXGeneralPreferencesController.h in Headers */ = {isa = PBXBuildFile; fileRef = C93DB18313ABC963006D42FE /* PXGeneralPreferencesController.h */; };
 		C93DB18713ABC963006D42FE /* PXGeneralPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93DB18413ABC963006D42FE /* PXGeneralPreferencesController.m */; };
 		C940AECD13D52E8700724CC0 /* paintbucket_bw.png in Resources */ = {isa = PBXBuildFile; fileRef = C940AECC13D52E8700724CC0 /* paintbucket_bw.png */; };
+		C949961E15A5EB3600211869 /* ZoomIn.png in Resources */ = {isa = PBXBuildFile; fileRef = C949961C15A5EB3600211869 /* ZoomIn.png */; };
+		C949961F15A5EB3600211869 /* ZoomIn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C949961D15A5EB3600211869 /* ZoomIn@2x.png */; };
 		C94A9EDA13B114DE0034AFE3 /* PXCanvasDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = C94A9ED813B114DE0034AFE3 /* PXCanvasDocument.xib */; };
 		C94A9EDD13B11BEA0034AFE3 /* PXSplitView.h in Headers */ = {isa = PBXBuildFile; fileRef = C94A9EDB13B11BEA0034AFE3 /* PXSplitView.h */; };
 		C94A9EDE13B11BEA0034AFE3 /* PXSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = C94A9EDC13B11BEA0034AFE3 /* PXSplitView.m */; };
@@ -109,7 +111,6 @@
 		C9DE2B2C13BF5899007EC48A /* PXPaletteViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DE2B2A13BF5899007EC48A /* PXPaletteViewController.h */; };
 		C9DE2B2D13BF5899007EC48A /* PXPaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DE2B2B13BF5899007EC48A /* PXPaletteViewController.m */; };
 		C9E088A413D5BDCE002A0AD4 /* magic_bw.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E088A313D5BDCE002A0AD4 /* magic_bw.png */; };
-		C9E088A613D5BF17002A0AD4 /* zoomIn_bw.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E088A513D5BF17002A0AD4 /* zoomIn_bw.png */; };
 		C9E088A813D5C03D002A0AD4 /* eyedropper_bw.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E088A713D5C03D002A0AD4 /* eyedropper_bw.png */; };
 		C9ECD4D6150BECB6001F686C /* PXAbout.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9ECD4D4150BECB6001F686C /* PXAbout.xib */; };
 		C9ECD4D9150BEF39001F686C /* PXAboutWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = C9ECD4D7150BEF39001F686C /* PXAboutWindowController.h */; };
@@ -417,7 +418,6 @@
 		EAC917660CE7DC7300E519E1 /* squareselect.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC917010CE7DC7300E519E1 /* squareselect.png */; };
 		EAC917670CE7DC7300E519E1 /* squareselectadd.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC917020CE7DC7300E519E1 /* squareselectadd.png */; };
 		EAC917680CE7DC7300E519E1 /* squareselectsubtract.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC917030CE7DC7300E519E1 /* squareselectsubtract.png */; };
-		EAC9176A0CE7DC7300E519E1 /* zoomIn.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC917050CE7DC7300E519E1 /* zoomIn.png */; };
 		EAC9176B0CE7DC7300E519E1 /* zoomOut.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC917060CE7DC7300E519E1 /* zoomOut.png */; };
 		EAC9176C0CE7DC7300E519E1 /* bgconf.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC917080CE7DC7300E519E1 /* bgconf.png */; };
 		EAC9176D0CE7DC7300E519E1 /* colorpalette.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC917090CE7DC7300E519E1 /* colorpalette.png */; };
@@ -562,6 +562,8 @@
 		C93DB18313ABC963006D42FE /* PXGeneralPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXGeneralPreferencesController.h; sourceTree = "<group>"; };
 		C93DB18413ABC963006D42FE /* PXGeneralPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXGeneralPreferencesController.m; sourceTree = "<group>"; };
 		C940AECC13D52E8700724CC0 /* paintbucket_bw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paintbucket_bw.png; sourceTree = "<group>"; };
+		C949961C15A5EB3600211869 /* ZoomIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZoomIn.png; sourceTree = "<group>"; };
+		C949961D15A5EB3600211869 /* ZoomIn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZoomIn@2x.png"; sourceTree = "<group>"; };
 		C94A9ED913B114DE0034AFE3 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PXCanvasDocument.xib; sourceTree = "<group>"; };
 		C94A9EDB13B11BEA0034AFE3 /* PXSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSplitView.h; sourceTree = "<group>"; };
 		C94A9EDC13B11BEA0034AFE3 /* PXSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXSplitView.m; sourceTree = "<group>"; };
@@ -632,7 +634,6 @@
 		C9DE2B2A13BF5899007EC48A /* PXPaletteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXPaletteViewController.h; sourceTree = "<group>"; };
 		C9DE2B2B13BF5899007EC48A /* PXPaletteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXPaletteViewController.m; sourceTree = "<group>"; };
 		C9E088A313D5BDCE002A0AD4 /* magic_bw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magic_bw.png; sourceTree = "<group>"; };
-		C9E088A513D5BF17002A0AD4 /* zoomIn_bw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoomIn_bw.png; sourceTree = "<group>"; };
 		C9E088A713D5C03D002A0AD4 /* eyedropper_bw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyedropper_bw.png; sourceTree = "<group>"; };
 		C9ECD4D5150BECB6001F686C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PXAbout.xib; sourceTree = "<group>"; };
 		C9ECD4D7150BEF39001F686C /* PXAboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXAboutWindowController.h; sourceTree = "<group>"; };
@@ -951,7 +952,6 @@
 		EAC917010CE7DC7300E519E1 /* squareselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squareselect.png; sourceTree = "<group>"; };
 		EAC917020CE7DC7300E519E1 /* squareselectadd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squareselectadd.png; sourceTree = "<group>"; };
 		EAC917030CE7DC7300E519E1 /* squareselectsubtract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squareselectsubtract.png; sourceTree = "<group>"; };
-		EAC917050CE7DC7300E519E1 /* zoomIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoomIn.png; sourceTree = "<group>"; };
 		EAC917060CE7DC7300E519E1 /* zoomOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoomOut.png; sourceTree = "<group>"; };
 		EAC917080CE7DC7300E519E1 /* bgconf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgconf.png; sourceTree = "<group>"; };
 		EAC917090CE7DC7300E519E1 /* colorpalette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorpalette.png; sourceTree = "<group>"; };
@@ -1910,6 +1910,8 @@
 			children = (
 				C901A20F15A5E5C600F4B644 /* Eraser.png */,
 				C901A21015A5E5C600F4B644 /* Eraser@2x.png */,
+				C949961C15A5EB3600211869 /* ZoomIn.png */,
+				C949961D15A5EB3600211869 /* ZoomIn@2x.png */,
 				EAC916EE0CE7DC7300E519E1 /* apencil.png */,
 				EAC916EF0CE7DC7300E519E1 /* ellipse.png */,
 				EAC916F10CE7DC7300E519E1 /* eyedropper.png */,
@@ -1931,8 +1933,6 @@
 				EAC917010CE7DC7300E519E1 /* squareselect.png */,
 				EAC917020CE7DC7300E519E1 /* squareselectadd.png */,
 				EAC917030CE7DC7300E519E1 /* squareselectsubtract.png */,
-				EAC917050CE7DC7300E519E1 /* zoomIn.png */,
-				C9E088A513D5BF17002A0AD4 /* zoomIn_bw.png */,
 				EAC917060CE7DC7300E519E1 /* zoomOut.png */,
 				C9F4AA2F154F5BB200C922CC /* zoomOut_bw.png */,
 			);
@@ -2293,7 +2293,6 @@
 				EAC917660CE7DC7300E519E1 /* squareselect.png in Resources */,
 				EAC917670CE7DC7300E519E1 /* squareselectadd.png in Resources */,
 				EAC917680CE7DC7300E519E1 /* squareselectsubtract.png in Resources */,
-				EAC9176A0CE7DC7300E519E1 /* zoomIn.png in Resources */,
 				EAC9176B0CE7DC7300E519E1 /* zoomOut.png in Resources */,
 				EAC9176C0CE7DC7300E519E1 /* bgconf.png in Resources */,
 				EAC9176D0CE7DC7300E519E1 /* colorpalette.png in Resources */,
@@ -2334,7 +2333,6 @@
 				C9DC4D9B13D0E6D70065C1A6 /* PXImageSizePrompt.xib in Resources */,
 				C940AECD13D52E8700724CC0 /* paintbucket_bw.png in Resources */,
 				C9E088A413D5BDCE002A0AD4 /* magic_bw.png in Resources */,
-				C9E088A613D5BF17002A0AD4 /* zoomIn_bw.png in Resources */,
 				C9E088A813D5C03D002A0AD4 /* eyedropper_bw.png in Resources */,
 				C912F26D13D5CDC100C0CF29 /* PXSpriteSheetExporter.xib in Resources */,
 				C9B1FA5E13D732FC00BB7CF7 /* PXManagePresetsWindow.xib in Resources */,
@@ -2363,6 +2361,8 @@
 				C94FA7BF15A5DE18000FA307 /* TitlebarGradient@2x.png in Resources */,
 				C901A21115A5E5C600F4B644 /* Eraser.png in Resources */,
 				C901A21215A5E5C600F4B644 /* Eraser@2x.png in Resources */,
+				C949961E15A5EB3600211869 /* ZoomIn.png in Resources */,
+				C949961F15A5EB3600211869 /* ZoomIn@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

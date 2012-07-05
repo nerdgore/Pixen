@@ -31,7 +31,7 @@
 
 - (NSCursor *)cursor
 {
-	NSString *name = _zoomType == PXZoomIn ? @"zoomIn_bw.png" : @"zoomOut_bw.png";
+	NSString *name = _zoomType == PXZoomIn ? @"ZoomIn" : @"zoomOut_bw.png";
 	
 	return [[[NSCursor alloc] initWithImage:[NSImage imageNamed:name]
 									hotSpot:NSMakePoint(5.0f, 5.0f)] autorelease];

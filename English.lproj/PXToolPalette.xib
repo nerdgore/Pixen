@@ -172,9 +172,9 @@
 													<int key="NSTag">3</int>
 													<int key="NSButtonFlags">918831359</int>
 													<int key="NSButtonFlags2">6</int>
-													<object class="NSCustomResource" key="NSNormalImage" id="546320115">
+													<object class="NSCustomResource" key="NSNormalImage" id="324533354">
 														<string key="NSClassName">NSImage</string>
-														<string key="NSResourceName">zoomIn</string>
+														<string key="NSResourceName">ZoomIn</string>
 													</object>
 													<string key="NSAlternateContents"/>
 													<string key="NSKeyEquivalent"/>
@@ -542,7 +542,7 @@
 													<int key="NSTag">3</int>
 													<int key="NSButtonFlags">918831359</int>
 													<int key="NSButtonFlags2">6</int>
-													<reference key="NSNormalImage" ref="546320115"/>
+													<reference key="NSNormalImage" ref="324533354"/>
 													<string key="NSAlternateContents"/>
 													<string key="NSKeyEquivalent"/>
 													<int key="NSPeriodicDelay">400</int>
@@ -1653,6 +1653,7 @@
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="Eraser">{16, 16}</string>
 			<string key="TitlebarGradient">{1, 17}</string>
+			<string key="ZoomIn">{16, 16}</string>
 			<string key="ellipse">{16, 16}</string>
 			<string key="eyedropper">{16, 16}</string>
 			<string key="lasso">{16, 16}</string>
@@ -1663,7 +1664,6 @@
 			<string key="pencil">{16, 16}</string>
 			<string key="rectangle">{16, 16}</string>
 			<string key="squareselect">{16, 16}</string>
-			<string key="zoomIn">{16, 16}</string>
 		</dictionary>
 	</data>
 </archive>
