@@ -128,6 +128,10 @@
 			
 			[self playAnimation];
 		}
+		else {
+			[self stopAnimation];
+			[self setSingleCanvas:nil];
+		}
 	}
 }
 
