@@ -49,14 +49,8 @@
 	
 	[docController addDocument:doc];
 	
-	NSImage *cocoaImage = [[[self canvas] exportImage] retain];
-	[cocoaImage lockFocus];
-	
-	NSBitmapImageRep *bitmapRep = [[[NSBitmapImageRep alloc] initWithFocusedViewRect:(NSRect){NSZeroPoint,[cocoaImage size]}] autorelease];
-	[cocoaImage unlockFocus];
-	
-	[cocoaImage removeRepresentation:[[cocoaImage representations] objectAtIndex:0]];
-	[cocoaImage addRepresentation:bitmapRep];
+	NSBitmapImageRep *bitmapRep = [[self canvas] imageRep];
+	NSImage *cocoaImage = [[NSImage alloc] initWithData:[bitmapRep TIFFRepresentation]];
 	
 	[[[[doc animation] celAtIndex:0] canvas] replaceActiveLayerWithImage:cocoaImage];
 	[cocoaImage release];

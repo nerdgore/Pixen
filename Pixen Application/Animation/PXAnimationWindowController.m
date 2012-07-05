@@ -71,7 +71,10 @@
 		prevIndex = [self numberOfCels] ? [self numberOfCels] - 1 : 0;
 	if (newCelIndex != prevIndex)
 	{
-		[(PXAnimationView *)[self view] setPreviousCelImage:[[[self celAtIndex:prevIndex] canvas] displayImage]];
+		NSBitmapImageRep *imageRep = [[[self celAtIndex:prevIndex] canvas] imageRep];
+		NSImage *image = [[[NSImage alloc] initWithData:[imageRep TIFFRepresentation]] autorelease];
+		
+		[(PXAnimationView *)[self view] setPreviousCelImage:image];
 	}
 	else
 	{
@@ -161,10 +164,8 @@
 	
 	PXCel *cel = [self celAtIndex:index];
 	
-	NSImage *image = [[cel canvas] exportImage];
-	[image lockFocus];
-	NSBitmapImageRep *bitmapRep = [[[NSBitmapImageRep alloc] initWithFocusedViewRect:NSMakeRect(0, 0, [image size].width, [image size].height)] autorelease];
-	[image unlockFocus];
+	NSBitmapImageRep *bitmapRep = [[cel canvas] imageRep];
+	
 	[pboard declareTypes:[NSArray arrayWithObjects:PXCelPboardType, NSTIFFPboardType, nil] owner:self];
 	[pboard setData:[NSKeyedArchiver archivedDataWithRootObject:cel] forType:PXCelPboardType];
 	[pboard setData:[bitmapRep TIFFRepresentation] forType:NSTIFFPboardType];

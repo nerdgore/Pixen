@@ -193,8 +193,14 @@
 
 - (void)updatePreviewReal
 {
-	[thumbnailView setImage:[[self layer] displayImage]];
+	NSData *data = [[[self layer] imageRep] TIFFRepresentation];
+	
+	NSImage *image = [[NSImage alloc] initWithData:data];
+	
+	[thumbnailView setImage:image];
 	[thumbnailView setNeedsDisplay:YES];
+	
+	[image release];
 }
 
 - (void)updatePreview:(NSNotification *)notification

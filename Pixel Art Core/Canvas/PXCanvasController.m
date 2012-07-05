@@ -301,7 +301,12 @@
 {
 	[backgroundController reloadData];
 	[[backgroundController window] setTitle:[NSString stringWithFormat:@"%@ - %@", NSLocalizedString(@"Backgrounds", @"Backgrounds"), [[self document] displayName]]];
-	[backgroundController setPreviewImage:[canvas displayImage]];
+	
+	NSImage *image = [[NSImage alloc] initWithData:[[canvas imageRep] TIFFRepresentation]];
+	
+	[backgroundController setPreviewImage:image];
+	[image release];
+	
 	[backgroundController showWindow:self];	
 }
 

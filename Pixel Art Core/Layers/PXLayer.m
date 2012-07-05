@@ -338,14 +338,9 @@
 	PXImage_compositeUnderInRect(image, [aLayer image], aRect, NO);	
 }
 
-- (NSImage *)exportImage
+- (NSBitmapImageRep *)imageRep
 {
-	return PXImage_bitmapImage(image);
-}
-
-- (NSImage *)displayImage
-{
-	return PXImage_NSImage(image);
+	return PXImage_imageRep(image);
 }
 
 - (void)flipHorizontally
@@ -455,8 +450,8 @@
 
 - (void)adaptToPalette:(PXPalette *)p withTransparency:(BOOL)transparency matteColor:(NSColor *)matteColor
 {
-	id outputImage = [[[self displayImage] copy] autorelease];
-	id rep = [NSBitmapImageRep imageRepWithData:[outputImage TIFFRepresentation]];
+	NSBitmapImageRep *rep = [[[self imageRep] copy] autorelease];
+	
 	unsigned char *bitmapData = [rep bitmapData];
 	int i;
 	NSColor *calibratedClear = [[NSColor clearColor] colorUsingColorSpaceName:NSCalibratedRGBColorSpace];

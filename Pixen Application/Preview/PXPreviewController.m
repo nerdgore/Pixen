@@ -675,7 +675,11 @@
 
 - (void)setBackground:sender
 {
-	[backgroundController setPreviewImage:[canvas displayImage]];
+	NSImage *image = [[NSImage alloc] initWithData:[[canvas imageRep] TIFFRepresentation]];
+	
+	[backgroundController setPreviewImage:image];
+	[image release];
+	
 	[[backgroundController window] setTitle:NSLocalizedString(@"Backgrounds - Preview", @"Backgrounds - Preview")];
 	[backgroundController showWindow:self];
 	[backgroundController reloadData];

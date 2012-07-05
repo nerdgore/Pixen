@@ -122,9 +122,9 @@
 	[self.canvas drawInRect:dst fromRect:src operation:op fraction:frac];
 }
 
-- (NSImage *)displayImage
+- (NSBitmapImageRep *)imageRep
 {
-	return [self.canvas displayImage];
+	return [self.canvas imageRep];
 }
 
 @end

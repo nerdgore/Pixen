@@ -67,8 +67,8 @@
 - (void)compositeUnder:(PXLayer *)aLayer flattenOpacity:(BOOL)flattenOpacity;
 - (void)compositeUnder:(PXLayer *)aLayer inRect:(NSRect)aRect flattenOpacity:(BOOL)flattenOpacity;
 - (void)compositeNoBlendUnder:(PXLayer *)aLayer inRect:(NSRect)aRect;
-- (NSImage *)displayImage;
-- (NSImage *)exportImage;
+
+- (NSBitmapImageRep *)imageRep;
 
 - (void)adaptToPalette:(PXPalette *)p withTransparency:(BOOL)transparency matteColor:(NSColor *)matteColor;
 
