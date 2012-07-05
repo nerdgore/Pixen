@@ -162,7 +162,7 @@
 	
 	[NSGraphicsContext restoreGraphicsState];
 	
-	return spriteSheet;
+	return [spriteSheet autorelease];
 }
 
 - (IBAction)updatePreview:(id)sender
