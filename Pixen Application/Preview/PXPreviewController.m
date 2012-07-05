@@ -8,6 +8,7 @@
 #import "NSImage+Reps.h"
 #import "NSWindowController+Additions.h"
 #import "PXAnimation.h"
+#import "PXAnimationDocument.h"
 #import "PXCanvas.h"
 #import "PXCanvas_Backgrounds.h"
 #import "PXCanvas_ImportingExporting.h"
@@ -231,8 +232,17 @@
 
 - (void)documentClosed:(NSNotification *)notification
 {
-	if ([[notification object] canvas] == canvas) {
-		[self setSingleCanvas:nil];
+	PXDocument *document = [notification object];
+	
+	if ([document isKindOfClass:[PXCanvasDocument class]]) {
+		if ([[notification object] canvas] == canvas) {
+			[self setSingleCanvas:nil];
+		}
+	}
+	else if ([document isKindOfClass:[PXAnimationDocument class]]) {
+		if ([[notification object] animation] == _animation) {
+			[self setAnimation:nil];
+		}
 	}
 }
 
