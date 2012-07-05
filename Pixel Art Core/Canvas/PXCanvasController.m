@@ -7,6 +7,8 @@
 //
 
 #import "PXCanvasController.h"
+
+#import "NSImage+Reps.h"
 #import "PXDocumentController.h"
 #import "PXBackgroundController.h"
 #import "PXToolPaletteController.h"
@@ -302,10 +304,8 @@
 	[backgroundController reloadData];
 	[[backgroundController window] setTitle:[NSString stringWithFormat:@"%@ - %@", NSLocalizedString(@"Backgrounds", @"Backgrounds"), [[self document] displayName]]];
 	
-	NSImage *image = [[NSImage alloc] initWithData:[[canvas imageRep] TIFFRepresentation]];
-	
+	NSImage *image = [NSImage imageWithBitmapImageRep:[canvas imageRep]];
 	[backgroundController setPreviewImage:image];
-	[image release];
 	
 	[backgroundController showWindow:self];	
 }

@@ -7,6 +7,7 @@
 
 #import "PXCel.h"
 
+#import "NSImage+Reps.h"
 #import "PXAnimation.h"
 #import "PXCanvas.h"
 #import "PXCanvas_Drawing.h"
@@ -122,9 +123,9 @@
 	[self.canvas drawInRect:dst fromRect:src operation:op fraction:frac];
 }
 
-- (NSBitmapImageRep *)imageRep
+- (NSImage *)displayImage
 {
-	return [self.canvas imageRep];
+	return [NSImage imageWithBitmapImageRep:[self.canvas imageRep]];
 }
 
 @end

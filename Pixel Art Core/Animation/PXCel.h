@@ -35,6 +35,6 @@
 
 - (void)drawInRect:(NSRect)dst fromRect:(NSRect)src operation:(NSCompositingOperation)op fraction:(CGFloat)frac;
 
-- (NSBitmapImageRep *)imageRep;
+- (NSImage *)displayImage;
 
 @end

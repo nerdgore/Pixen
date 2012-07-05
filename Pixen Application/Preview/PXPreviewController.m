@@ -5,6 +5,7 @@
 
 #import "PXPreviewController.h"
 
+#import "NSImage+Reps.h"
 #import "NSWindowController+Additions.h"
 #import "PXAnimation.h"
 #import "PXCanvas.h"
@@ -675,10 +676,8 @@
 
 - (void)setBackground:sender
 {
-	NSImage *image = [[NSImage alloc] initWithData:[[canvas imageRep] TIFFRepresentation]];
-	
+	NSImage *image = [NSImage imageWithBitmapImageRep:[canvas imageRep]];
 	[backgroundController setPreviewImage:image];
-	[image release];
 	
 	[[backgroundController window] setTitle:NSLocalizedString(@"Backgrounds - Preview", @"Backgrounds - Preview")];
 	[backgroundController showWindow:self];

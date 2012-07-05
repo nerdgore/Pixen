@@ -7,6 +7,7 @@
 
 #import "PXCanvasWindowController_IBActions.h"
 
+#import "NSImage+Reps.h"
 #import "NSWindowController+Additions.h"
 #import "PXCanvas_Layers.h"
 #import "PXCanvas_ImportingExporting.h"
@@ -49,11 +50,8 @@
 	
 	[docController addDocument:doc];
 	
-	NSBitmapImageRep *bitmapRep = [[self canvas] imageRep];
-	NSImage *cocoaImage = [[NSImage alloc] initWithData:[bitmapRep TIFFRepresentation]];
-	
+	NSImage *cocoaImage = [NSImage imageWithBitmapImageRep:[[self canvas] imageRep]];
 	[[[[doc animation] celAtIndex:0] canvas] replaceActiveLayerWithImage:cocoaImage];
-	[cocoaImage release];
 	
 	[doc makeWindowControllers];
 	[doc showWindows];

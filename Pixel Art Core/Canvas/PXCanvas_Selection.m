@@ -7,6 +7,8 @@
 //
 
 #import "PXCanvas_Selection.h"
+
+#import "NSImage+Reps.h"
 #import "PXCanvas_Layers.h"
 #import "PXCanvas_CopyPaste.h"
 #import "PXCanvas_Modifying.h"
@@ -404,16 +406,20 @@
 			}
 		}
 	}
-	NSImage *cocoaImage = mergeLayers ? [self exportImage] : [activeLayer exportImage];
-	[cocoaImage compositeToPoint:NSZeroPoint 
-											fromRect:selectionRect 
-										 operation:NSCompositeSourceIn];
+	
+	NSImage *cocoaImage = [NSImage imageWithBitmapImageRep:mergeLayers ? [self imageRep] : [activeLayer imageRep]];
+	
+	[cocoaImage compositeToPoint:NSZeroPoint
+						fromRect:selectionRect
+					   operation:NSCompositeSourceIn];
 	
 	NSRect rect = selectionRect;
 	rect.origin = NSZeroPoint;
-	NSBitmapImageRep *rep = [[[NSBitmapImageRep alloc] initWithFocusedViewRect:rect] autorelease];		
+	
+	NSBitmapImageRep *rep = [[[NSBitmapImageRep alloc] initWithFocusedViewRect:rect] autorelease];
 	[tempImage unlockFocus];
-	return [rep representationUsingType:storageType properties:properties];		
+	
+	return [rep representationUsingType:storageType properties:properties];
 }
 
 - (PXSelectionMask)selectionMask

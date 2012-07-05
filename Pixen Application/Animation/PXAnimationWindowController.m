@@ -8,6 +8,7 @@
 
 #import "PXAnimationWindowController.h"
 
+#import "NSImage+Reps.h"
 #import "PXCanvas_ImportingExporting.h"
 #import "PXCanvas_Selection.h"
 #import "PXCanvasController.h"
@@ -72,7 +73,7 @@
 	if (newCelIndex != prevIndex)
 	{
 		NSBitmapImageRep *imageRep = [[[self celAtIndex:prevIndex] canvas] imageRep];
-		NSImage *image = [[[NSImage alloc] initWithData:[imageRep TIFFRepresentation]] autorelease];
+		NSImage *image = [NSImage imageWithBitmapImageRep:imageRep];
 		
 		[(PXAnimationView *)[self view] setPreviousCelImage:image];
 	}
