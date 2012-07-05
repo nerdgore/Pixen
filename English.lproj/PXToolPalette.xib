@@ -136,9 +136,9 @@
 													<int key="NSTag">1</int>
 													<int key="NSButtonFlags">918831359</int>
 													<int key="NSButtonFlags2">6</int>
-													<object class="NSCustomResource" key="NSNormalImage" id="412636056">
+													<object class="NSCustomResource" key="NSNormalImage" id="527876659">
 														<string key="NSClassName">NSImage</string>
-														<string key="NSResourceName">eraser</string>
+														<string key="NSResourceName">Eraser</string>
 													</object>
 													<string key="NSAlternateContents"/>
 													<string key="NSKeyEquivalent"/>
@@ -512,7 +512,7 @@
 													<int key="NSTag">1</int>
 													<int key="NSButtonFlags">918831359</int>
 													<int key="NSButtonFlags2">6</int>
-													<reference key="NSNormalImage" ref="412636056"/>
+													<reference key="NSNormalImage" ref="527876659"/>
 													<string key="NSAlternateContents"/>
 													<string key="NSKeyEquivalent"/>
 													<int key="NSPeriodicDelay">400</int>
@@ -1651,9 +1651,9 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="Eraser">{16, 16}</string>
 			<string key="TitlebarGradient">{1, 17}</string>
 			<string key="ellipse">{16, 16}</string>
-			<string key="eraser">{16, 16}</string>
 			<string key="eyedropper">{16, 16}</string>
 			<string key="lasso">{16, 16}</string>
 			<string key="linetool">{16, 16}</string>

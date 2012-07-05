@@ -25,6 +25,8 @@
 		BF1A538807ECD9200017A44E /* PXImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1A538607ECD9200017A44E /* PXImage.m */; };
 		BF269FE6091307BF00B7A218 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BB8ED608FB58F9009C75A6 /* QTKit.framework */; };
 		C900F4BE1509882F00DC6702 /* PXToolPalette.xib in Resources */ = {isa = PBXBuildFile; fileRef = C900F4BC1509882F00DC6702 /* PXToolPalette.xib */; };
+		C901A21115A5E5C600F4B644 /* Eraser.png in Resources */ = {isa = PBXBuildFile; fileRef = C901A20F15A5E5C600F4B644 /* Eraser.png */; };
+		C901A21215A5E5C600F4B644 /* Eraser@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C901A21015A5E5C600F4B644 /* Eraser@2x.png */; };
 		C903DADE14CBBD6800D82028 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = C903DADD14CBBD6800D82028 /* dsa_pub.pem */; };
 		C9104A5B14E38AAC00025103 /* NSWindowController+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = C9104A5914E38AAC00025103 /* NSWindowController+Additions.h */; };
 		C9104A5C14E38AAC00025103 /* NSWindowController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9104A5A14E38AAC00025103 /* NSWindowController+Additions.m */; };
@@ -399,7 +401,6 @@
 		EAC917510CE7DC7300E519E1 /* HotkeysPreferences.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EAC916EB0CE7DC7300E519E1 /* HotkeysPreferences.tiff */; };
 		EAC917530CE7DC7300E519E1 /* apencil.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC916EE0CE7DC7300E519E1 /* apencil.png */; };
 		EAC917540CE7DC7300E519E1 /* ellipse.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC916EF0CE7DC7300E519E1 /* ellipse.png */; };
-		EAC917550CE7DC7300E519E1 /* eraser.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC916F00CE7DC7300E519E1 /* eraser.png */; };
 		EAC917560CE7DC7300E519E1 /* eyedropper.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC916F10CE7DC7300E519E1 /* eyedropper.png */; };
 		EAC917590CE7DC7300E519E1 /* lasso.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC916F40CE7DC7300E519E1 /* lasso.png */; };
 		EAC9175A0CE7DC7300E519E1 /* lassoadd.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC916F50CE7DC7300E519E1 /* lassoadd.png */; };
@@ -544,6 +545,8 @@
 		BF1A538507ECD9200017A44E /* PXImage.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PXImage.h; sourceTree = "<group>"; };
 		BF1A538607ECD9200017A44E /* PXImage.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PXImage.m; sourceTree = "<group>"; };
 		C900F4BD1509882F00DC6702 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PXToolPalette.xib; sourceTree = "<group>"; };
+		C901A20F15A5E5C600F4B644 /* Eraser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Eraser.png; sourceTree = "<group>"; };
+		C901A21015A5E5C600F4B644 /* Eraser@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Eraser@2x.png"; sourceTree = "<group>"; };
 		C903DADD14CBBD6800D82028 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		C9104A5914E38AAC00025103 /* NSWindowController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindowController+Additions.h"; sourceTree = "<group>"; };
 		C9104A5A14E38AAC00025103 /* NSWindowController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindowController+Additions.m"; sourceTree = "<group>"; };
@@ -932,7 +935,6 @@
 		EAC916EB0CE7DC7300E519E1 /* HotkeysPreferences.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = HotkeysPreferences.tiff; sourceTree = "<group>"; };
 		EAC916EE0CE7DC7300E519E1 /* apencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apencil.png; sourceTree = "<group>"; };
 		EAC916EF0CE7DC7300E519E1 /* ellipse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ellipse.png; sourceTree = "<group>"; };
-		EAC916F00CE7DC7300E519E1 /* eraser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eraser.png; sourceTree = "<group>"; };
 		EAC916F10CE7DC7300E519E1 /* eyedropper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyedropper.png; sourceTree = "<group>"; };
 		EAC916F40CE7DC7300E519E1 /* lasso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lasso.png; sourceTree = "<group>"; };
 		EAC916F50CE7DC7300E519E1 /* lassoadd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lassoadd.png; sourceTree = "<group>"; };
@@ -1906,9 +1908,10 @@
 		EAC916EC0CE7DC7300E519E1 /* Tool Icons */ = {
 			isa = PBXGroup;
 			children = (
+				C901A20F15A5E5C600F4B644 /* Eraser.png */,
+				C901A21015A5E5C600F4B644 /* Eraser@2x.png */,
 				EAC916EE0CE7DC7300E519E1 /* apencil.png */,
 				EAC916EF0CE7DC7300E519E1 /* ellipse.png */,
-				EAC916F00CE7DC7300E519E1 /* eraser.png */,
 				EAC916F10CE7DC7300E519E1 /* eyedropper.png */,
 				C9E088A713D5C03D002A0AD4 /* eyedropper_bw.png */,
 				EAC916F40CE7DC7300E519E1 /* lasso.png */,
@@ -2274,7 +2277,6 @@
 				EAC917510CE7DC7300E519E1 /* HotkeysPreferences.tiff in Resources */,
 				EAC917530CE7DC7300E519E1 /* apencil.png in Resources */,
 				EAC917540CE7DC7300E519E1 /* ellipse.png in Resources */,
-				EAC917550CE7DC7300E519E1 /* eraser.png in Resources */,
 				EAC917560CE7DC7300E519E1 /* eyedropper.png in Resources */,
 				EAC917590CE7DC7300E519E1 /* lasso.png in Resources */,
 				EAC9175A0CE7DC7300E519E1 /* lassoadd.png in Resources */,
@@ -2359,6 +2361,8 @@
 				C9BA174115A5CFDC008BC323 /* ImageSizeInfo@2x.png in Resources */,
 				C94FA7BE15A5DE18000FA307 /* TitlebarGradient.png in Resources */,
 				C94FA7BF15A5DE18000FA307 /* TitlebarGradient@2x.png in Resources */,
+				C901A21115A5E5C600F4B644 /* Eraser.png in Resources */,
+				C901A21215A5E5C600F4B644 /* Eraser@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
