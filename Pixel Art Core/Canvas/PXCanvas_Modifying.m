@@ -439,9 +439,9 @@ NSUInteger PointSizeF (const void *item) {
 	PXColorArrayAppendColor(_newColors, newColor);
 }
 
-- (void)applyImage:(NSImage *)image toLayer:(PXLayer *)layer
+- (void)applyImageRep:(NSBitmapImageRep *)imageRep toLayer:(PXLayer *)layer
 {
-	[layer applyImage:image];
+	[layer applyImageRep:imageRep];
 	[self refreshWholePalette];
 }
 

@@ -81,7 +81,7 @@
 
 - (void)rotateByDegrees:(int)degrees;
 
-- (void)applyImage:(NSImage *)img;
+- (void)applyImageRep:(NSBitmapImageRep *)imageRep;
 
 - (NSData *)colorData;
 - (void)setColorData:(NSData *)data;

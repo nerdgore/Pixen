@@ -41,7 +41,12 @@
 
 - (void)replaceActiveLayerWithImage:(NSImage *)anImage
 {
-	NSImageRep *firstRep = [[anImage representations] objectAtIndex:0];
+	if (![[[anImage representations] objectAtIndex:0] isKindOfClass:[NSBitmapImageRep class]]) {
+		@throw [NSException exceptionWithName:NSGenericException reason:@"Not a bitmap file" userInfo:nil];
+		return;
+	}
+	
+	NSBitmapImageRep *firstRep = [[anImage representations] objectAtIndex:0];
 	NSSize newSize = NSMakeSize((int)[firstRep pixelsWide], (int)[firstRep pixelsHigh]);
 	
 	for (PXLayer *currentLayer in layers) {
@@ -57,7 +62,7 @@
 		[[layers lastObject] setCanvas:self];
 		[self activateLayer:[layers lastObject]];
 	}
-	[self applyImage:anImage toLayer:activeLayer];
+	[self applyImageRep:firstRep toLayer:activeLayer];
 	[self updatePreviewSize];
 	[self layersChanged];
 }
