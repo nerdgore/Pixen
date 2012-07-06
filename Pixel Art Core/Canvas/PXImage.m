@@ -54,6 +54,8 @@ void PXTileRelease(PXTile* t)
 		free(data);
 	}
 	CGImageRelease(t->image);
+	
+	free(t);
 }
 void PXTileDraw(PXTile* t, CGRect source, CGRect dest)
 {
